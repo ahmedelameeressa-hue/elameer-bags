@@ -1,13 +1,37 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>elameer bags | المصدر المباشر للحقائب النسائية والمحافظ</title>
+    <title>الأمير باجز | مصنع وتوريد الحقائب النسائية والشنط الهاند ميد في مصر</title>
+    
+    <!-- تحسينات محركات البحث SEO -->
+    <meta name="description" content="مصنع الأمير باجز (elameer bags) لتصنيع وتوريد أحدث الحقائب النسائية، شنط البراندات، الهاند ميد، التوت باج الفرعونية، والشنط الجلد والبوك الحريمي بأعلى جودة وأسعار المصنع جملة وقطاعي.">
+    <meta name="keywords" content="الأمير باجز, elameer bags, مصنع شنط حريمي, شنط هاند ميد, توت باج فرعوني, شنط براندات, شنط جلد, بوك حريمي, تجارة الشنط جملة, شنط خروج">
+    <meta name="author" content="Elameer Bags">
+
+    <!-- بيانات مهيكلة لجوجل Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "الأمير باجز - Elameer Bags",
+      "description": "مصنع وتوريد الحقائب النسائية والمحافظ يدوياً من المصنع مباشرة - جملة وقطاعي",
+      "telephone": "+201551468045",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cairo",
+        "addressCountry": "EG"
+      },
+      "priceRange": "$$"
+    }
+    </script>
+
     <!-- تحميل خط القاهرة العربي العصري -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com" rel="stylesheet">
+    
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -20,7 +44,8 @@
                     colors: {
                         brand: {
                             gold: '#C5A880',
-                            dark: '#1A1A1A',
+                            goldDark: '#A88B63',
+                            dark: '#141414',
                             light: '#F9F9F9'
                         }
                     }
@@ -32,180 +57,114 @@
         body { font-family: 'Cairo', sans-serif; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased">
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-brand-gold selection:text-white">
 
-    <!-- شريط الإعلانات العبوي -->
-    <div class="bg-brand-dark text-white text-xs md:text-sm py-2 px-4 text-center font-semibold">
-        ✨ تصنيع محلي عالي الجودة | أسعار خاصة لتجار الجملة وأصحاب الأونلاين | شحن لكل المحافظات 🚚
+    <!-- شريط الإعلانات العلوي -->
+    <div class="bg-brand-dark text-white text-xs md:text-sm py-2.5 px-4 text-center font-semibold tracking-wide">
+        ✨ من مصنع الأمير باجز إليكِ مباشرة | موديلات 2026 حصرية | أسعار خاصة للتجار والأونلاين | شحن لكل محافظات مصر 🚚
     </div>
 
     <!-- الهيدر الرئيسي -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <span class="text-2xl font-extrabold text-brand-dark tracking-wide">elameer bags</span>
-            </div>
-            <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-gray-700">
-                <a href="#products" class="hover:text-brand-gold transition">الرئيسية</a>
+    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 py-3.5 flex justify-between items-center">
+            <!-- الشعار -->
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="w-9 h-9 bg-brand-dark text-brand-gold rounded-lg flex items-center justify-center font-black text-xl group-hover:bg-brand-gold group-hover:text-brand-dark transition">E</div>
+                <span class="text-xl md:text-2xl font-black text-brand-dark tracking-tight">elameer <span class="text-brand-gold">bags</span></span>
+            </a>
+
+            <!-- القائمة للشاشات الكبيرة -->
+            <nav class="hidden lg:flex items-center gap-7 text-sm font-bold text-gray-700">
+                <a href="#products" class="hover:text-brand-gold transition">الأقسام</a>
                 <a href="#brands" class="hover:text-brand-gold transition">شنط براندات</a>
                 <a href="#handmade" class="hover:text-brand-gold transition">شنط هاند ميد</a>
                 <a href="#pharaonic" class="hover:text-brand-gold transition">شنط فرعوني</a>
-                <a href="#leather" class="hover:text-brand-gold transition">شنط جلد وبوك</a>
-                <a href="#wholesale" class="hover:text-brand-gold transition text-brand-gold font-bold">تجار الجملة</a>
+                <a href="#leather" class="hover:text-brand-gold transition">جلد ومحافظ</a>
+                <a href="#features" class="hover:text-brand-gold transition">مميزاتنا</a>
+                <a href="#wholesale" class="text-brand-goldDark hover:text-brand-dark transition bg-brand-gold/15 px-3 py-1.5 rounded-lg">تجار الجملة 🤝</a>
             </nav>
+
+            <!-- زر التواصل -->
             <div>
-                <a href="https://wa.me/201551468045" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full text-sm font-bold flex items-center gap-1.5 transition shadow">
+                <a href="https://wa.meً%20الأمير%20باجز،%20أرغب%20في%20الاستفسار%20عن%20المنتجات" target="_blank" rel="noopener" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 md:px-5 md:py-2.5 rounded-full text-xs md:text-sm font-bold flex items-center gap-2 transition shadow-md hover:shadow-lg">
                     <span>واتساب المبيعات</span>
+                    <span>📲</span>
                 </a>
             </div>
+        </div>
+
+        <!-- شريط تنقل سريع للموبايل -->
+        <div class="lg:hidden bg-gray-50 border-t border-gray-200 px-4 py-2 flex items-center gap-4 overflow-x-auto text-xs font-bold whitespace-nowrap">
+            <a href="#brands" class="text-gray-700 hover:text-brand-gold">براندات</a>
+            <a href="#handmade" class="text-gray-700 hover:text-brand-gold">هاند ميد</a>
+            <a href="#pharaonic" class="text-gray-700 hover:text-brand-gold">فرعوني</a>
+            <a href="#leather" class="text-gray-700 hover:text-brand-gold">شنط جلد</a>
+            <a href="#wallets" class="text-gray-700 hover:text-brand-gold">بوك حريمي</a>
+            <a href="#wholesale" class="text-brand-goldDark">تجار الجملة</a>
         </div>
     </header>
 
     <!-- قسم البطل (Hero Section) -->
-    <section class="bg-gradient-to-b from-white to-gray-100 py-12 md:py-20 border-b border-gray-200">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <span class="bg-brand-gold/20 text-brand-dark px-3 py-1 rounded-full text-xs md:text-sm font-bold mb-4 inline-block">الأمير باجز | تصنيع يدوي عالي الجودة - جملة وقطاعي</span>
-            <h1 class="text-3xl md:text-5xl font-extrabold text-brand-dark mb-6 leading-tight">
-                تصنيع وتوريد الحقائب النسائية والمحافظ يدوياً من المصنع مباشرة
+    <section class="bg-gradient-to-b from-white via-gray-50 to-gray-100 py-14 md:py-24 border-b border-gray-200 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <span class="bg-brand-gold/20 text-brand-dark border border-brand-gold/30 px-4 py-1.5 rounded-full text-xs md:text-sm font-extrabold mb-6 inline-block">
+                🏭 الأمير باجز | تصنيع يدوي مصري 100% - جملة وقطاعي
+            </span>
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-black text-brand-dark mb-6 leading-tight">
+                مصنع وتوريد أحدث <span class="text-brand-goldDark">الحقائب النسائية</span> والشنط الهاند ميد في مصر
             </h1>
-            <p class="text-gray-600 text-base md:text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
-                نقدم تشكيلة راقية ومميزة تضم شنط البراندات، الهاند ميد، التوت الفرعونية، والبوك الحريمي المصنوعة بأجود خامات الأوتامين والجلد الفرنيه والفرعوني بتفصيل متقن.
+            <p class="text-gray-600 text-base md:text-lg mb-9 max-w-2xl mx-auto leading-relaxed font-medium">
+                اكتشفي تشكيلة راقية تجمع بين الفخامة والعملية: شنط البراندات العصرية، الهاند ميد والأوتامين، التوت باج الفرعونية، والشنط الجلد والبوك الحريمي بتفصيل يدوي متقن وسعر المصنع المباشر.
             </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#products" class="bg-brand-dark hover:bg-black text-white px-8 py-3.5 rounded-xl font-bold text-base transition shadow-lg">
-                    تصفح الأقسام والمنتجات 🛍️
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#products" class="bg-brand-dark hover:bg-black text-white px-8 py-4 rounded-xl font-bold text-base transition shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
+                    <span>تصفح الأقسام والمنتجات</span>
+                    <span>🛍️</span>
                 </a>
-                <a href="https://linktr.ee/elameerbags" target="_blank" class="bg-white border-2 border-gray-300 hover:border-brand-dark text-brand-dark px-8 py-3.5 rounded-xl font-bold text-base transition">
-                    كل منصاتنا وروابطنا 🌐
+                <a href="https://linktr.ee/elameerbags" target="_blank" rel="noopener" class="bg-white border-2 border-gray-300 hover:border-brand-dark text-brand-dark px-8 py-4 rounded-xl font-bold text-base transition flex items-center justify-center gap-2">
+                    <span>كل منصاتنا وروابطنا</span>
+                    <span>🌐</span>
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- شريط المميزات وبناء الثقة -->
+    <section id="features" class="bg-white py-10 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div class="p-4 rounded-xl bg-gray-50 border border-gray-100">
+                    <div class="text-3xl mb-2">🏭</div>
+                    <h3 class="font-bold text-brand-dark text-base mb-1">من المصنع للمستهلك</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed">بدون وسطاء، نضمن لكِ أعلى جودة خامات بأفضل سعر في السوق.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-gray-50 border border-gray-100">
+                    <div class="text-3xl mb-2">🧵</div>
+                    <h3 class="font-bold text-brand-dark text-base mb-1">تقفيل يدوي متقن</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed">اهتمام بأدق التفاصيل من متانة السوستة والخياطة حتى البطانة.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-gray-50 border border-gray-100">
+                    <div class="text-3xl mb-2">🔍</div>
+                    <h3 class="font-bold text-brand-dark text-base mb-1">معاينة قبل الاستلام</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed">يمكنكِ فحص الشنطة والتأكد من جودتها قبل الدفع للمندوب.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-gray-50 border border-gray-100">
+                    <div class="text-3xl mb-2">🤝</div>
+                    <h3 class="font-bold text-brand-dark text-base mb-1">دعم تجار الأونلاين</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed">نوفر صوراً احترافية للمنتجات لمساعدة التجار على البيع بسهولة.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- الكتالوج والأقسام الرئيسية -->
     <main id="products" class="max-w-7xl mx-auto px-4 py-16">
-        <div class="text-center mb-12">
-            <h2 class="text-2xl md:text-3xl font-bold text-brand-dark mb-2">أقسام منتجات الأمير باجز</h2>
-            <p class="text-gray-500 text-sm">اختر القسم المناسب وتواصل معنا فوراً عبر الواتساب للاستفسار أو طلب الجملة والتجزئة</p>
+        <div class="text-center mb-14">
+            <span class="text-brand-goldDark font-bold text-sm tracking-wider uppercase">كتالوج 2026</span>
+            <h2 class="text-2xl md:text-4xl font-black text-brand-dark mt-1 mb-3">أقسام منتجات الأمير باجز</h2>
+            <p class="text-gray-500 text-sm md:text-base max-w-xl mx-auto">اختاري القسم المناسب وتواصلي معنا فوراً عبر الواتساب لمشاهدة الكتالوج المصور والأسعار</p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
             <!-- قسم 1: شنط براندات -->
-            <div id="brands" class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between transition hover:shadow-md">
-                <div class="bg-gray-100 h-56 flex items-center justify-center text-gray-400 relative">
-                    <span class="absolute top-3 right-3 bg-brand-dark text-white text-xs px-2.5 py-1 rounded-md font-bold">قسم: براندات</span>
-                    <span class="text-base font-semibold">صورة شنط براندات</span>
-                </div>
-                <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="font-bold text-xl text-brand-dark mb-2">شنط براندات فاخرة</h3>
-                    <p class="text-gray-500 text-sm mb-6">موديلات عصرية مستوحاة من أشهر البراندات العالمية بتقفيل يدوي فائق الجودة.</p>
-                    <a href="https://wa.me/201551468045?text=أرغب%20في%20معرفة%20موديلات%20وأسعار%20شنط%20البراندات" target="_blank" class="mt-auto bg-green-600 hover:bg-green-700 text-white text-center py-3 rounded-xl text-sm font-bold transition">
-                        استفسر واطلب عبر واتساب 📲
-                    </a>
-                </div>
-            </div>
-
-            <!-- قسم 2: شنط هاند ميد -->
-            <div id="handmade" class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between transition hover:shadow-md">
-                <div class="bg-gray-100 h-56 flex items-center justify-center text-gray-400 relative">
-                    <span class="absolute top-3 right-3 bg-brand-dark text-white text-xs px-2.5 py-1 rounded-md font-bold">قسم: هاند ميد</span>
-                    <span class="text-base font-semibold">صورة شنط هاند ميد</span>
-                </div>
-                <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="font-bold text-xl text-brand-dark mb-2">شنط هاند ميد</h3>
-                    <p class="text-gray-500 text-sm mb-6">مصنوعة بعناية من أجود خامات الأوتامين والخيش المعالج لتناسب الاستخدام اليومي العملي.</p>
-                    <a href="https://wa.me/201551468045?text=أرغب%20في%20معرفة%20موديلات%20وأسعار%20شنط%20الهاند%20ميد" target="_blank" class="mt-auto bg-green-600 hover:bg-green-700 text-white text-center py-3 rounded-xl text-sm font-bold transition">
-                        استفسر واطلب عبر واتساب 📲
-                    </a>
-                </div>
-            </div>
-
-            <!-- قسم 3: شنط فرعوني ورسومات -->
-            <div id="pharaonic" class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between transition hover:shadow-md">
-                <div class="bg-gray-100 h-56 flex items-center justify-center text-gray-400 relative">
-                    <span class="absolute top-3 right-3 bg-brand-dark text-white text-xs px-2.5 py-1 rounded-md font-bold">قسم: فرعوني</span>
-                    <span class="text-base font-semibold">صورة شنط فرعونية</span>
-                </div>
-                <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="font-bold text-xl text-brand-dark mb-2">شنط فرعوني ورسومات</h3>
-                    <p class="text-gray-500 text-sm mb-6">توت باج وحقائب بطابع فرعوني أصيل ورسومات فنية مميزة تعكس التراث المصري الراقي.</p>
-                    <a href="https://wa.me/201551468045?text=أرغب%20في%20معرفة%20موديلات%20الشنط%20الفرعونية%20والرسومات" target="_blank" class="mt-auto bg-green-600 hover:bg-green-700 text-white text-center py-3 rounded-xl text-sm font-bold transition">
-                        استفسر واطلب عبر واتساب 📲
-                    </a>
-                </div>
-            </div>
-
-            <!-- قسم 4: شنط جلد -->
-            <div id="leather" class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between transition hover:shadow-md">
-                <div class="bg-gray-100 h-56 flex items-center justify-center text-gray-400 relative">
-                    <span class="absolute top-3 right-3 bg-brand-dark text-white text-xs px-2.5 py-1 rounded-md font-bold">قسم: جلد</span>
-                    <span class="text-base font-semibold">صورة شنط الجلد</span>
-                </div>
-                <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="font-bold text-xl text-brand-dark mb-2">شنط جلد فاخرة</h3>
-                    <p class="text-gray-500 text-sm mb-6">مصنوعة من أجود أنواع الجلود والفرنيه اللامع بتصميمات متينة تناسب الخروج والمناسبات.</p>
-                    <a href="https://wa.me/201551468045?text=أرغب%20في%20معرفة%20موديلات%20وأسعار%20شنط%20الجلد" target="_blank" class="mt-auto bg-green-600 hover:bg-green-700 text-white text-center py-3 rounded-xl text-sm font-bold transition">
-                        استفسر واطلب عبر واتساب 📲
-                    </a>
-                </div>
-            </div>
-
-            <!-- قسم 5: بوك حريمي -->
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between transition hover:shadow-md">
-                <div class="bg-gray-100 h-56 flex items-center justify-center text-gray-400 relative">
-                    <span class="absolute top-3 right-3 bg-brand-dark text-white text-xs px-2.5 py-1 rounded-md font-bold">قسم: محافظ</span>
-                    <span class="text-base font-semibold">صورة البوك الحريمي</span>
-                </div>
-                <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="font-bold text-xl text-brand-dark mb-2">بوك حريمي والمحافظ</h3>
-                    <p class="text-gray-500 text-sm mb-6">تشكيلة أنيقة وعملية من المحافظ النسائية المصممة بعناية لتتطابق مع أطقم الشنط.</p>
-                    <a href="https://wa.me/201551468045?text=أرغب%20في%20معرفة%20موديلات%20وأسعار%20البوك%20الحريمي" target="_blank" class="mt-auto bg-green-600 hover:bg-green-700 text-white text-center py-3 rounded-xl text-sm font-bold transition">
-                        استفسر واطلب عبر واتساب 📲
-                    </a>
-                </div>
-            </div>
-
-            <!-- قسم عروض الجملة -->
-            <div id="wholesale" class="bg-brand-dark text-white rounded-2xl shadow-sm border border-brand-dark overflow-hidden flex flex-col justify-between p-6">
-                <div>
-                    <span class="bg-white/20 text-white text-xs px-2.5 py-1 rounded-md font-bold inline-block mb-3">للصناع والتجار</span>
-                    <h3 class="font-bold text-xl mb-2">عروض تجار الجملة والأونلاين</h3>
-                    <p class="text-gray-300 text-sm mb-6">أسعار خاصة وتسهيلات لطلبات الجملة لتجار التجزئة وصفقات الأونلاين في كل المحافظات.</p>
-                </div>
-                <a href="https://wa.me/201551468045?text=أنا%20تاجر%20جملة%20وأرغب%20في%20معرفة%20الأسعار%20والكتالوج" target="_blank" class="bg-white text-brand-dark text-center py-3 rounded-xl text-sm font-bold hover:bg-gray-100 transition shadow">
-                    تواصل معنا لتجار الجملة 🤝
-                </a>
-            </div>
-
-        </div>
-    </main>
-
-    <!-- قسم تجار الجملة السفلي -->
-    <section class="bg-gray-100 border-t border-gray-200 py-16 px-4">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-2xl md:text-3xl font-bold text-brand-dark mb-4">هل أنت تاجر جملة أو صاحب متجر أونلاين؟</h2>
-            <p class="text-gray-600 text-sm md:text-base mb-8 leading-relaxed">
-                نوفر شراكات حقيقية وأسعار جملة تنافسية تضمن لك هامش ربح ممتاز. تواصل معنا مباشرة لتتعرف على تشكيلات الجملة وطلب الكميات.
-            </p>
-            <a href="https://wa.me/201551468045?text=أنا%20تاجر%20جملة%20وأرغب%20في%20معرفة%20التفاصيل%20والأسعار" target="_blank" class="inline-block bg-brand-dark text-white px-8 py-3.5 rounded-xl font-bold hover:bg-black transition shadow">
-                تواصل معنا لتجار الجملة 🤝
-            </a>
-        </div>
-    </section>
-
-    <!-- الفوتر -->
-    <footer class="bg-white border-t border-gray-200 py-8 text-center text-sm text-gray-500">
-        <div class="max-w-7xl mx-auto px-4">
-            <p class="font-bold text-brand-dark mb-2">elameer bags | جميع الحقوق محفوظة</p>
-            <p class="mb-4">رقم الواتساب الرسمي: <span dir="ltr" class="font-semibold text-gray-700">01551468045</span></p>
-            <div class="flex justify-center gap-4 text-xs font-semibold">
-                <a href="https://linktr.ee/elameerbags" target="_blank" class="text-brand-dark hover:underline">رابط المنصات (Linktree)</a>
-                <span>•</span>
-                <a href="https://bit.ly/47JL0yC" target="_blank" class="text-brand-dark hover:underline">موقعنا المختصر</a>
-            </div>
-        </div>
-    </footer>
-
-</body>
-</html>
