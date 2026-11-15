@@ -1,15 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الأمير باجز | elameer bags - تصنيع وتوريد الحقائب النسائية والمحافظ</title>
-    <!-- تحميل خط Cairo العربي العصري والواضح -->
+    <title>elameer bags | المصدر المباشر للحقائب النسائية والمحافظ</title>
+    <!-- تحميل خط القاهرة العربي العصري -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <!-- تحميل Tailwind CSS -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -20,14 +19,9 @@
                     },
                     colors: {
                         brand: {
-                            cream: '#FAF7F2',
-                            sand: '#F0E9DF',
-                            brown: '#3E2723',
-                            leather: '#5D4037',
-                            gold: '#C59B27',
-                            goldLight: '#E5C158',
-                            whatsapp: '#1E9E52',
-                            whatsappHover: '#167D40'
+                            gold: '#C5A880',
+                            dark: '#1A1A1A',
+                            light: '#F9F9F9'
                         }
                     }
                 }
@@ -35,543 +29,183 @@
         }
     </script>
     <style>
-        body {
-            font-family: 'Cairo', sans-serif;
-            background-color: #FAF7F2;
-            color: #2C1E1A;
-            scroll-behavior: smooth;
-        }
-        /* تأثيرات انتقال سلسة للبطاقات */
-        .product-card {
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
-        }
-        .product-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 24px -8px rgba(62, 39, 35, 0.15);
-        }
-        /* شريط تمرير أنيق */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #FAF7F2;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #C59B27;
-            border-radius: 9999px;
-        }
+        body { font-family: 'Cairo', sans-serif; }
     </style>
 </head>
-<body class="antialiased selection:bg-brand-gold selection:text-white">
+<body class="bg-gray-50 text-gray-800 antialiased">
 
-    <!-- الشريط العلوي السريع (Top Announcement Bar) -->
-    <div class="bg-brand-brown text-brand-cream text-xs sm:text-sm py-2 px-4 text-center font-semibold">
-        <span>🏭 من المصنع مباشرة بدون وسيط • أسعار خاصة لتجار الجملة وطلبات الأونلاين والقطاعي 🚚 شحن لجميع المحافظات</span>
+    <!-- شريط الإعلانات العبوي -->
+    <div class="bg-brand-dark text-white text-xs md:text-sm py-2 px-4 text-center font-semibold">
+        ✨ تصنيع محلي عالي الجودة | أسعار خاصة لتجار الجملة وأصحاب الأونلاين | شحن لكل المحافظات 🚚
     </div>
 
-    <!-- الهيدر والقائمة الرئيسية (Header) -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-brand-sand shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16 sm:h-20">
-                <!-- الشعار (Brand Logo) -->
-                <a href="#" class="flex items-center gap-3 group">
-                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-brand-brown flex items-center justify-center text-brand-gold shadow-md group-hover:scale-105 transition-transform">
-                        <!-- أيقونة حقيبة SVG خفيفة وسريعة -->
-                        <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                        </svg>
-                    </div>
-                    <div>
-                        <span class="block text-lg sm:text-xl font-extrabold text-brand-brown tracking-tight leading-none">elameer bags</span>
-                        <span class="block text-xs sm:text-sm font-bold text-brand-gold mt-0.5">الأمير باجز للمنتجات الجلدية</span>
-                    </div>
+    <!-- الهيدر الرئيسي -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl font-extrabold text-brand-dark tracking-wide">elameer bags</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-gray-700">
+                <a href="#products" class="hover:text-brand-gold transition">الرئيسية</a>
+                <a href="#brands" class="hover:text-brand-gold transition">شنط براندات</a>
+                <a href="#handmade" class="hover:text-brand-gold transition">شنط هاند ميد</a>
+                <a href="#pharaonic" class="hover:text-brand-gold transition">شنط فرعوني</a>
+                <a href="#leather" class="hover:text-brand-gold transition">شنط جلد وبوك</a>
+                <a href="#wholesale" class="hover:text-brand-gold transition text-brand-gold font-bold">تجار الجملة</a>
+            </nav>
+            <div>
+                <a href="https://wa.me/201551468045" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full text-sm font-bold flex items-center gap-1.5 transition shadow">
+                    <span>واتساب المبيعات</span>
                 </a>
-
-                <!-- روابط التنقل للشاشات المتوسطة والكبيرة -->
-                <nav class="hidden md:flex items-center gap-6 text-sm font-bold text-brand-leather">
-                    <a href="#hero" class="hover:text-brand-gold transition-colors">الرئيسية</a>
-                    <a href="#catalog" onclick="filterProducts('cross')" class="hover:text-brand-gold transition-colors">شنط الكروس</a>
-                    <a href="#catalog" onclick="filterProducts('pharaonic')" class="hover:text-brand-gold transition-colors">الشنط الفرعونية</a>
-                    <a href="#catalog" onclick="filterProducts('wallets')" class="hover:text-brand-gold transition-colors">المحافظ</a>
-                    <a href="#wholesale" class="hover:text-brand-gold transition-colors">تجار الجملة</a>
-                </nav>
-
-                <!-- زر واتساب سريع في الهيدر -->
-                <div class="flex items-center gap-2">
-                    <a href="https://wa.me/201551468045?text=السلام%20عليكم%20الأمير%20باجز،%20أرغب%20في%20الاستفسار%20عن%20المنتجات%20والأسعار" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       class="inline-flex items-center gap-2 bg-brand-whatsapp hover:bg-brand-whatsappHover text-white font-bold text-xs sm:text-sm px-3.5 py-2.5 sm:px-5 sm:py-2.5 rounded-xl shadow-sm transition-all active:scale-95">
-                        <svg class="w-4 h-4 sm:w-5 sm:h-5 fill-current" viewBox="0 0 24 24">
-                            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
-                        </svg>
-                        <span>واتساب مباشر</span>
-                    </a>
-                </div>
             </div>
         </div>
     </header>
 
-    <!-- قسم الترحيب الرئيسي (Hero Section) -->
-    <section id="hero" class="relative overflow-hidden bg-gradient-to-b from-brand-sand/70 to-brand-cream pt-10 pb-14 sm:pt-16 sm:pb-20 border-b border-brand-sand">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center">
-                <!-- شارة المصنع -->
-                <div class="inline-flex items-center gap-2 bg-white border border-brand-gold/40 text-brand-brown px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold shadow-sm mb-6">
-                    <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
-                    <span>تصنيع محلي عالي الجودة • جملة وقطاعي</span>
+    <!-- قسم البطل (Hero Section) -->
+    <section class="bg-gradient-to-b from-white to-gray-100 py-12 md:py-20 border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="bg-brand-gold/20 text-brand-dark px-3 py-1 rounded-full text-xs md:text-sm font-bold mb-4 inline-block">الأمير باجز | تصنيع يدوي عالي الجودة - جملة وقطاعي</span>
+            <h1 class="text-3xl md:text-5xl font-extrabold text-brand-dark mb-6 leading-tight">
+                تصنيع وتوريد الحقائب النسائية والمحافظ يدوياً من المصنع مباشرة
+            </h1>
+            <p class="text-gray-600 text-base md:text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
+                نقدم تشكيلة راقية ومميزة تضم شنط البراندات، الهاند ميد، التوت الفرعونية، والبوك الحريمي المصنوعة بأجود خامات الأوتامين والجلد الفرنيه والفرعوني بتفصيل متقن.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#products" class="bg-brand-dark hover:bg-black text-white px-8 py-3.5 rounded-xl font-bold text-base transition shadow-lg">
+                    تصفح الأقسام والمنتجات 🛍️
+                </a>
+                <a href="https://linktr.ee/elameerbags" target="_blank" class="bg-white border-2 border-gray-300 hover:border-brand-dark text-brand-dark px-8 py-3.5 rounded-xl font-bold text-base transition">
+                    كل منصاتنا وروابطنا 🌐
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- الكتالوج والأقسام الرئيسية -->
+    <main id="products" class="max-w-7xl mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold text-brand-dark mb-2">أقسام منتجات الأمير باجز</h2>
+            <p class="text-gray-500 text-sm">اختر القسم المناسب وتواصل معنا فوراً عبر الواتساب للاستفسار أو طلب الجملة والتجزئة</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- قسم 1: شنط براندات -->
+            <div id="brands" class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between transition hover:shadow-md">
+                <div class="bg-gray-100 h-56 flex items-center justify-center text-gray-400 relative">
+                    <span class="absolute top-3 right-3 bg-brand-dark text-white text-xs px-2.5 py-1 rounded-md font-bold">قسم: براندات</span>
+                    <span class="text-base font-semibold">صورة شنط براندات</span>
                 </div>
-
-                <!-- العنوان الرئيسي -->
-                <h1 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-brand-brown leading-tight mb-5">
-                    الأمير باجز | تصنيع وتوريد الحقائب النسائية والمحافظ يدوياً من المصنع مباشرة
-                </h1>
-
-                <!-- الوصف التفصيلي للخامات -->
-                <p class="text-base sm:text-lg text-brand-leather leading-relaxed mb-8 font-medium">
-                    نقدم تشكيلة راقية من الشنط الكروس، الشنط التوت الفرعونية الكبيرة، والمحافظ المصنوعة بأجود الخامات: 
-                    <span class="font-bold text-brand-brown underline decoration-brand-gold decoration-2">قماش الأوتامين الفاخر</span>، 
-                    <span class="font-bold text-brand-brown underline decoration-brand-gold decoration-2">قماش الخيش المعالج</span>، و
-                    <span class="font-bold text-brand-brown underline decoration-brand-gold decoration-2">الجلد الفرنيه</span> بتقفيل متقن يناسب تطلعات تجار الجملة وعملاء التجزئة.
-                </p>
-
-                <!-- أزرار الدعوة لاتخاذ إجراء (CTAs) -->
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
-                    <a href="#catalog" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-brown hover:bg-brand-leather text-white font-bold px-8 py-3.5 rounded-xl shadow-md transition-all">
-                        <span>تصفح الكتالوج والموديلات</span>
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                        </svg>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-xl text-brand-dark mb-2">شنط براندات فاخرة</h3>
+                    <p class="text-gray-500 text-sm mb-6">موديلات عصرية مستوحاة من أشهر البراندات العالمية بتقفيل يدوي فائق الجودة.</p>
+                    <a href="https://wa.me/201551468045?text=أرغب%20في%20معرفة%20موديلات%20وأسعار%20شنط%20البراندات" target="_blank" class="mt-auto bg-green-600 hover:bg-green-700 text-white text-center py-3 rounded-xl text-sm font-bold transition">
+                        استفسر واطلب عبر واتساب 📲
                     </a>
-                    <a href="https://wa.me/201551468045?text=السلام%20عليكم%20الأمير%20باجز،%20محتاج%20أعرف%20تفاصيل%20الأسعار%20والموديلات%20المتاحة" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-brand-sand text-brand-brown border-2 border-brand-brown font-bold px-8 py-3.5 rounded-xl transition-all">
-                        <span>تواصل واتساب: 01551468045</span>
+                </div>
+            </div>
+
+            <!-- قسم 2: شنط هاند ميد -->
+            <div id="handmade" class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between transition hover:shadow-md">
+                <div class="bg-gray-100 h-56 flex items-center justify-center text-gray-400 relative">
+                    <span class="absolute top-3 right-3 bg-brand-dark text-white text-xs px-2.5 py-1 rounded-md font-bold">قسم: هاند ميد</span>
+                    <span class="text-base font-semibold">صورة شنط هاند ميد</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-xl text-brand-dark mb-2">شنط هاند ميد</h3>
+                    <p class="text-gray-500 text-sm mb-6">مصنوعة بعناية من أجود خامات الأوتامين والخيش المعالج لتناسب الاستخدام اليومي العملي.</p>
+                    <a href="https://wa.me/201551468045?text=أرغب%20في%20معرفة%20موديلات%20وأسعار%20شنط%20الهاند%20ميد" target="_blank" class="mt-auto bg-green-600 hover:bg-green-700 text-white text-center py-3 rounded-xl text-sm font-bold transition">
+                        استفسر واطلب عبر واتساب 📲
                     </a>
                 </div>
+            </div>
 
-                <!-- مؤشرات الثقة السريعة -->
-                <div class="grid grid-cols-3 gap-3 sm:gap-6 mt-12 pt-8 border-t border-brand-brown/10 text-center">
-                    <div>
-                        <span class="block text-xl sm:text-2xl font-extrabold text-brand-brown">100%</span>
-                        <span class="text-xs sm:text-sm text-brand-leather font-semibold">تصنيع وتقفيل يدوي متقن</span>
-                    </div>
-                    <div>
-                        <span class="block text-xl sm:text-2xl font-extrabold text-brand-gold">سعر المصنع</span>
-                        <span class="text-xs sm:text-sm text-brand-leather font-semibold">بدون أي وسطاء للتجار</span>
-                    </div>
-                    <div>
-                        <span class="block text-xl sm:text-2xl font-extrabold text-brand-brown">تجدد دائم</span>
-                        <span class="text-xs sm:text-sm text-brand-leather font-semibold">أحدث الموديلات العصرية</span>
-                    </div>
+            <!-- قسم 3: شنط فرعوني ورسومات -->
+            <div id="pharaonic" class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between transition hover:shadow-md">
+                <div class="bg-gray-100 h-56 flex items-center justify-center text-gray-400 relative">
+                    <span class="absolute top-3 right-3 bg-brand-dark text-white text-xs px-2.5 py-1 rounded-md font-bold">قسم: فرعوني</span>
+                    <span class="text-base font-semibold">صورة شنط فرعونية</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-xl text-brand-dark mb-2">شنط فرعوني ورسومات</h3>
+                    <p class="text-gray-500 text-sm mb-6">توت باج وحقائب بطابع فرعوني أصيل ورسومات فنية مميزة تعكس التراث المصري الراقي.</p>
+                    <a href="https://wa.me/201551468045?text=أرغب%20في%20معرفة%20موديلات%20الشنط%20الفرعونية%20والرسومات" target="_blank" class="mt-auto bg-green-600 hover:bg-green-700 text-white text-center py-3 rounded-xl text-sm font-bold transition">
+                        استفسر واطلب عبر واتساب 📲
+                    </a>
                 </div>
             </div>
+
+            <!-- قسم 4: شنط جلد -->
+            <div id="leather" class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between transition hover:shadow-md">
+                <div class="bg-gray-100 h-56 flex items-center justify-center text-gray-400 relative">
+                    <span class="absolute top-3 right-3 bg-brand-dark text-white text-xs px-2.5 py-1 rounded-md font-bold">قسم: جلد</span>
+                    <span class="text-base font-semibold">صورة شنط الجلد</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-xl text-brand-dark mb-2">شنط جلد فاخرة</h3>
+                    <p class="text-gray-500 text-sm mb-6">مصنوعة من أجود أنواع الجلود والفرنيه اللامع بتصميمات متينة تناسب الخروج والمناسبات.</p>
+                    <a href="https://wa.me/201551468045?text=أرغب%20في%20معرفة%20موديلات%20وأسعار%20شنط%20الجلد" target="_blank" class="mt-auto bg-green-600 hover:bg-green-700 text-white text-center py-3 rounded-xl text-sm font-bold transition">
+                        استفسر واطلب عبر واتساب 📲
+                    </a>
+                </div>
+            </div>
+
+            <!-- قسم 5: بوك حريمي -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between transition hover:shadow-md">
+                <div class="bg-gray-100 h-56 flex items-center justify-center text-gray-400 relative">
+                    <span class="absolute top-3 right-3 bg-brand-dark text-white text-xs px-2.5 py-1 rounded-md font-bold">قسم: محافظ</span>
+                    <span class="text-base font-semibold">صورة البوك الحريمي</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-xl text-brand-dark mb-2">بوك حريمي والمحافظ</h3>
+                    <p class="text-gray-500 text-sm mb-6">تشكيلة أنيقة وعملية من المحافظ النسائية المصممة بعناية لتتطابق مع أطقم الشنط.</p>
+                    <a href="https://wa.me/201551468045?text=أرغب%20في%20معرفة%20موديلات%20وأسعار%20البوك%20الحريمي" target="_blank" class="mt-auto bg-green-600 hover:bg-green-700 text-white text-center py-3 rounded-xl text-sm font-bold transition">
+                        استفسر واطلب عبر واتساب 📲
+                    </a>
+                </div>
+            </div>
+
+            <!-- قسم عروض الجملة -->
+            <div id="wholesale" class="bg-brand-dark text-white rounded-2xl shadow-sm border border-brand-dark overflow-hidden flex flex-col justify-between p-6">
+                <div>
+                    <span class="bg-white/20 text-white text-xs px-2.5 py-1 rounded-md font-bold inline-block mb-3">للصناع والتجار</span>
+                    <h3 class="font-bold text-xl mb-2">عروض تجار الجملة والأونلاين</h3>
+                    <p class="text-gray-300 text-sm mb-6">أسعار خاصة وتسهيلات لطلبات الجملة لتجار التجزئة وصفقات الأونلاين في كل المحافظات.</p>
+                </div>
+                <a href="https://wa.me/201551468045?text=أنا%20تاجر%20جملة%20وأرغب%20في%20معرفة%20الأسعار%20والكتالوج" target="_blank" class="bg-white text-brand-dark text-center py-3 rounded-xl text-sm font-bold hover:bg-gray-100 transition shadow">
+                    تواصل معنا لتجار الجملة 🤝
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- قسم تجار الجملة السفلي -->
+    <section class="bg-gray-100 border-t border-gray-200 py-16 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-brand-dark mb-4">هل أنت تاجر جملة أو صاحب متجر أونلاين؟</h2>
+            <p class="text-gray-600 text-sm md:text-base mb-8 leading-relaxed">
+                نوفر شراكات حقيقية وأسعار جملة تنافسية تضمن لك هامش ربح ممتاز. تواصل معنا مباشرة لتتعرف على تشكيلات الجملة وطلب الكميات.
+            </p>
+            <a href="https://wa.me/201551468045?text=أنا%20تاجر%20جملة%20وأرغب%20في%20معرفة%20التفاصيل%20والأسعار" target="_blank" class="inline-block bg-brand-dark text-white px-8 py-3.5 rounded-xl font-bold hover:bg-black transition shadow">
+                تواصل معنا لتجار الجملة 🤝
+            </a>
         </div>
     </section>
 
-    <!-- قسم الكتالوج والمنتجات (Product Catalog Section) -->
-    <section id="catalog" class="py-12 sm:py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- عنوان القسم -->
-            <div class="text-center mb-8">
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-brown mb-2">كتالوج موديلات elameer bags</h2>
-                <p class="text-sm sm:text-base text-brand-leather">اختر القسم المناسب واضغط على زر واتساب أسفل أي موديل لطلبه فوراً أو الاستفسار عن سعر الجملة والقطاعي</p>
-            </div>
-
-            <!-- أزرار الفلترة التفاعلية (Category Filter Tabs) -->
-            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-10" id="filter-buttons">
-                <button onclick="filterProducts('all')" data-filter="all" class="filter-btn active px-5 py-2.5 rounded-xl text-sm font-bold bg-brand-brown text-white shadow-sm transition-all">
-                    جميع الموديلات (8)
-                </button>
-                <button onclick="filterProducts('cross')" data-filter="cross" class="filter-btn px-5 py-2.5 rounded-xl text-sm font-bold bg-white text-brand-brown border border-brand-sand hover:border-brand-gold transition-all">
-                    شنط كروس يومية
-                </button>
-                <button onclick="filterProducts('pharaonic')" data-filter="pharaonic" class="filter-btn px-5 py-2.5 rounded-xl text-sm font-bold bg-white text-brand-brown border border-brand-sand hover:border-brand-gold transition-all">
-                    شنط توت فرعونية كبيرة
-                </button>
-                <button onclick="filterProducts('wallets')" data-filter="wallets" class="filter-btn px-5 py-2.5 rounded-xl text-sm font-bold bg-white text-brand-brown border border-brand-sand hover:border-brand-gold transition-all">
-                    محافظ نسائية
-                </button>
-            </div>
-
-            <!-- شبكة المنتجات (Product Grid) -->
-            <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- سيتم توليد البطاقات تلقائياً عبر الجافاسكربت لضمان سرعة التحميل الفائقة -->
-            </div>
-        </div>
-    </section>
-
-    <!-- قسم مميزات التعامل مع المصنع وتجار الجملة (Wholesale Traders Section) -->
-    <section id="wholesale" class="py-12 sm:py-16 bg-brand-brown text-brand-cream">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-brand-leather/40 border border-brand-gold/30 rounded-3xl p-6 sm:p-10 lg:p-12 shadow-xl">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                    <div class="lg:col-span-8">
-                        <span class="inline-block bg-brand-gold text-brand-brown font-extrabold text-xs px-3 py-1 rounded-full mb-4">
-                            خاص لتجار الجملة وأصحاب المحلات والأونلاين
-                        </span>
-                        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-4">
-                            ليه تتعامل وتشتري مباشرة من مصنع الأمير باجز؟ 🏭
-                        </h2>
-                        <p class="text-brand-sand text-sm sm:text-base mb-6 leading-relaxed">
-                            نوفر لشركائنا من التجار وأصحاب البراندات والمحلات أعلى هامش ربح بفضل البيع المباشر من خطوط الإنتاج لدينا، مع التزام كامل بالمواعيد وجودة الخامات.
-                        </p>
-
-                        <!-- قائمة المميزات -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-                            <div class="flex items-start gap-3 bg-brand-brown/50 p-3.5 rounded-xl border border-white/10">
-                                <span class="text-brand-gold text-lg font-bold">✓</span>
-                                <div>
-                                    <strong class="block text-white">أفضل سعر جملة بدون وسيط</strong>
-                                    <span class="text-brand-sand text-xs">أسعار مصنع تنافسية تضمن لك أعلى مكسب.</span>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-3 bg-brand-brown/50 p-3.5 rounded-xl border border-white/10">
-                                <span class="text-brand-gold text-lg font-bold">✓</span>
-                                <div>
-                                    <strong class="block text-white">جودة خامات وتقفيل مضمونة</strong>
-                                    <span class="text-brand-sand text-xs">مراجعة دقيقة لكل قطعة قبل التغليف والشحن.</span>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-3 bg-brand-brown/50 p-3.5 rounded-xl border border-white/10">
-                                <span class="text-brand-gold text-lg font-bold">✓</span>
-                                <div>
-                                    <strong class="block text-white">تنوع وتجديد مستمر في الموديلات</strong>
-                                    <span class="text-brand-sand text-xs">تشكيلات موسمية وعصرية تناسب كل الأذواق.</span>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-3 bg-brand-brown/50 p-3.5 rounded-xl border border-white/10">
-                                <span class="text-brand-gold text-lg font-bold">✓</span>
-                                <div>
-                                    <strong class="block text-white">شحن سريع وتوفير كميات</strong>
-                                    <span class="text-brand-sand text-xs">توصيل آمن وسريع لجميع محافظات مصر.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- بطاقة التواصل السريع للتجار -->
-                    <div class="lg:col-span-4 bg-brand-cream text-brand-brown rounded-2xl p-6 text-center shadow-lg">
-                        <h3 class="text-xl font-extrabold mb-2">اطلب قائمة أسعار الجملة الآن</h3>
-                        <p class="text-xs sm:text-sm text-brand-leather mb-5">
-                            تواصل مع إدارة المبيعات مباشرة عبر واتساب للحصول على كتالوج الجملة والحد الأدنى للكميات.
-                        </p>
-                        <a href="https://wa.me/201551468045?text=السلام%20عليكم%20الأمير%20باجز،%20أنا%20تاجر%20ومحتاج%20أستفسر%20عن%20قائمة%20أسعار%20الجملة%20والكميات" 
-                           target="_blank" 
-                           rel="noopener noreferrer"
-                           class="w-full inline-flex items-center justify-center gap-2 bg-brand-whatsapp hover:bg-brand-whatsappHover text-white font-extrabold py-3.5 px-5 rounded-xl shadow-md transition-all mb-3">
-                            <span>تواصل واتساب: 01551468045</span>
-                        </a>
-                        <a href="https://linktr.ee/elameerbags" 
-                           target="_blank" 
-                           rel="noopener noreferrer"
-                           class="w-full inline-flex items-center justify-center gap-2 bg-brand-sand hover:bg-brand-gold/20 text-brand-brown font-bold py-2.5 px-4 rounded-xl text-xs transition-all">
-                            <span>🌐 تصفح جميع منصاتنا عبر Linktree</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- الفوتر وبيانات التواصل والروابط (Footer) -->
-    <footer class="bg-white border-t border-brand-sand pt-12 pb-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-brand-sand">
-                <!-- نبذة عن البرند -->
-                <div>
-                    <div class="flex items-center gap-2.5 mb-3">
-                        <div class="w-9 h-9 rounded-lg bg-brand-brown flex items-center justify-center text-brand-gold">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                            </svg>
-                        </div>
-                        <span class="text-xl font-extrabold text-brand-brown">elameer bags | الأمير باجز</span>
-                    </div>
-                    <p class="text-sm text-brand-leather leading-relaxed">
-                        مصنع متخصص في تصميم وإنتاج الحقائب النسائية والمحافظ اليدوية من قماش الأوتامين، الخيش المعالج، والجلد الفرنيه بأعلى معايير الجودة وأسعار المصنع المباشرة.
-                    </p>
-                </div>
-
-                <!-- روابط سريعة -->
-                <div>
-                    <h4 class="text-base font-extrabold text-brand-brown mb-3">أقسام المتجر</h4>
-                    <ul class="space-y-2 text-sm text-brand-leather font-semibold">
-                        <li><a href="#catalog" onclick="filterProducts('all')" class="hover:text-brand-gold transition-colors">• جميع الموديلات والكتالوج</a></li>
-                        <li><a href="#catalog" onclick="filterProducts('cross')" class="hover:text-brand-gold transition-colors">• شنط الكروس اليومية</a></li>
-                        <li><a href="#catalog" onclick="filterProducts('pharaonic')" class="hover:text-brand-gold transition-colors">• الشنط التوت الفرعونية الكبيرة</a></li>
-                        <li><a href="#catalog" onclick="filterProducts('wallets')" class="hover:text-brand-gold transition-colors">• المحافظ النسائية</a></li>
-                        <li><a href="#wholesale" class="hover:text-brand-gold transition-colors">• قسم تجار الجملة والمحلات</a></li>
-                    </ul>
-                </div>
-
-                <!-- التواصل والروابط الرسمية -->
-                <div>
-                    <h4 class="text-base font-extrabold text-brand-brown mb-3">تواصل معنا وروابطنا الرسمية</h4>
-                    <ul class="space-y-2.5 text-sm text-brand-leather font-semibold">
-                        <li class="flex items-center gap-2">
-                            <span class="text-brand-whatsapp font-bold">📞 واتساب وهاتف:</span>
-                            <a href="https://wa.me/201551468045" target="_blank" rel="noopener noreferrer" class="text-brand-brown hover:underline font-bold" dir="ltr">01551468045</a>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="text-brand-gold font-bold">🌐 كل الروابط (Linktree):</span>
-                            <a href="https://linktr.ee/elameerbags" target="_blank" rel="noopener noreferrer" class="text-brand-brown hover:underline break-all">linktr.ee/elameerbags</a>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="text-brand-brown font-bold">🔗 رابط الموقع المختصر:</span>
-                            <a href="https://bit.ly/47JL0yC" target="_blank" rel="noopener noreferrer" class="text-brand-brown hover:underline">bit.ly/47JL0yC</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- حقوق الملكية -->
-            <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-brand-leather font-semibold">
-                <p>© 2025 elameer bags (الأمير باجز). جميع الحقوق محفوظة.</p>
-                <p>مصممة لسرعة تصفح فائقة على الهواتف الذكية ⚡</p>
+    <!-- الفوتر -->
+    <footer class="bg-white border-t border-gray-200 py-8 text-center text-sm text-gray-500">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="font-bold text-brand-dark mb-2">elameer bags | جميع الحقوق محفوظة</p>
+            <p class="mb-4">رقم الواتساب الرسمي: <span dir="ltr" class="font-semibold text-gray-700">01551468045</span></p>
+            <div class="flex justify-center gap-4 text-xs font-semibold">
+                <a href="https://linktr.ee/elameerbags" target="_blank" class="text-brand-dark hover:underline">رابط المنصات (Linktree)</a>
+                <span>•</span>
+                <a href="https://bit.ly/47JL0yC" target="_blank" class="text-brand-dark hover:underline">موقعنا المختصر</a>
             </div>
         </div>
     </footer>
 
-    <!-- زر واتساب عائم أسفل الشاشة لسهولة الطلب السريع على الموبايل -->
-    <a href="https://wa.me/201551468045?text=السلام%20عليكم%20الأمير%20باجز،%20محتاج%20أستفسر%20عن%20المنتجات" 
-       target="_blank" 
-       rel="noopener noreferrer"
-       aria-label="تواصل معنا عبر واتساب"
-       class="fixed bottom-5 left-5 z-50 flex items-center gap-2 bg-brand-whatsapp hover:bg-brand-whatsappHover text-white font-bold px-4 py-3 rounded-full shadow-lg hover:scale-105 transition-transform">
-        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
-        </svg>
-        <span class="hidden sm:inline text-sm">اطلب عبر واتساب</span>
-    </a>
-
-    <!-- سكريبت البيانات والتفاعل الخفيف السريع -->
-    <script>
-        // بيانات موديلات متجر الأمير باجز (قابلة للتعديل وإضافة صورك المضغوطة بسهولة)
-        const products = [
-            {
-                id: 'EB-101',
-                category: 'cross',
-                categoryName: 'شنط كروس',
-                title: 'شنطة كروس أوتامين نقشة كلاسيك',
-                material: 'قماش اوتامين + جلد فرنيه',
-                dimensions: '24 × 17 × 8 سم',
-                colors: 'بيج، بني، أسود، كحلي',
-                badge: 'الأكثر مبيعاً',
-                accentColor: '#5D4037',
-                svgType: 'cross'
-            },
-            {
-                id: 'EB-102',
-                category: 'pharaonic',
-                categoryName: 'شنط توت فرعونية',
-                title: 'شنطة توت فرعونية كبيرة (نفرتيتي)',
-                material: 'قماش خيش معالج + جلد فرنيه',
-                dimensions: '38 × 32 × 12 سم',
-                colors: 'ذهبي فرعوني، بيج رملي، أسود',
-                badge: 'تصميم مميز',
-                accentColor: '#C59B27',
-                svgType: 'tote'
-            },
-            {
-                id: 'EB-103',
-                category: 'wallets',
-                categoryName: 'محافظ نسائية',
-                title: 'محفظة يد نسائية سحاب مزدوج',
-                material: 'قماش اوتامين مطعم بالجلد',
-                dimensions: '20 × 10 × 3 سم',
-                colors: 'متوفرة بـ 6 ألوان عصرية',
-                badge: 'سعر المصنع',
-                accentColor: '#3E2723',
-                svgType: 'wallet'
-            },
-            {
-                id: 'EB-104',
-                category: 'cross',
-                categoryName: 'شنط كروس',
-                title: 'شنطة كروس يومية بسلسلة ذهبية',
-                material: 'جلد فرنيه فاخر عالي المتانة',
-                dimensions: '22 × 15 × 7 سم',
-                colors: 'أسود، هافان، نبيتي، أوف وايت',
-                badge: 'موديل جديد',
-                accentColor: '#4E342E',
-                svgType: 'cross'
-            },
-            {
-                id: 'EB-105',
-                category: 'pharaonic',
-                categoryName: 'شنط توت فرعونية',
-                title: 'شنطة توت كبيرة نقوش مصرية أصيلة',
-                material: 'قماش اوتامين ثقيل مبطن',
-                dimensions: '40 × 34 × 14 سم',
-                colors: 'ترابي، كحلي، جملي',
-                badge: 'مناسبة للجامعة والعمل',
-                accentColor: '#B8860B',
-                svgType: 'tote'
-            },
-            {
-                id: 'EB-106',
-                category: 'wallets',
-                categoryName: 'محافظ نسائية',
-                title: 'محفظة كروت ونقود مدمجة',
-                material: 'قماش خيش معالج + جلد فرنيه',
-                dimensions: '14 × 9 × 2.5 سم',
-                colors: 'بيج، بني غامق، زيتي',
-                badge: 'تشكيلة الجملة',
-                accentColor: '#6D4C41',
-                svgType: 'wallet'
-            },
-            {
-                id: 'EB-107',
-                category: 'cross',
-                categoryName: 'شنط كروس',
-                title: 'شنطة كروس مزدوجة الجيوب',
-                material: 'قماش خيش معالج مقاوم للخدش',
-                dimensions: '25 × 18 × 9 سم',
-                colors: 'رملي، أسود، كافيه',
-                badge: 'عملي وأنيق',
-                accentColor: '#5D4037',
-                svgType: 'cross'
-            },
-            {
-                id: 'EB-108',
-                category: 'pharaonic',
-                categoryName: 'شنط توت فرعونية',
-                title: 'شنطة كتف وتوت الملكة الفرعونية',
-                material: 'قماش اوتامين + يد جلد فرنيه',
-                dimensions: '36 × 30 × 11 سم',
-                colors: 'أسود ملكي، ذهبي، بيج',
-                badge: 'متاح كميات للتجار',
-                accentColor: '#C59B27',
-                svgType: 'tote'
-            }
-        ];
-
-        // دالة رسم أيقونة توضيحية خفيفة جداً (SVG) بدلاً من الصور الثقيلة لضمان سرعة فتح فورية
-        function getProductIllustration(type, color) {
-            if (type === 'tote') {
-                return `
-                <svg class="w-24 h-24 mx-auto drop-shadow-sm" viewBox="0 0 100 100" fill="none">
-                    <path d="M35 32V22C35 15 41 10 50 10C59 10 65 15 65 22V32" stroke="#3E2723" stroke-width="4" stroke-linecap="round"/>
-                    <path d="M18 32H82L76 86C75.5 89 73 91 70 91H30C27 91 24.5 89 24 86L18 32Z" fill="${color}" fill-opacity="0.18" stroke="#3E2723" stroke-width="3.5"/>
-                    <rect x="30" y="45" width="40" height="32" rx="4" stroke="${color}" stroke-width="2.5" stroke-dasharray="4 2"/>
-                    <circle cx="50" cy="61" r="6" fill="${color}"/>
-                </svg>`;
-            } else if (type === 'wallet') {
-                return `
-                <svg class="w-24 h-24 mx-auto drop-shadow-sm" viewBox="0 0 100 100" fill="none">
-                    <rect x="16" y="30" width="68" height="44" rx="8" fill="${color}" fill-opacity="0.18" stroke="#3E2723" stroke-width="3.5"/>
-                    <path d="M62 46H84V58H62C58.6863 58 56 55.3137 56 52C56 48.6863 58.6863 46 62 46Z" fill="#FAF7F2" stroke="#3E2723" stroke-width="3"/>
-                    <circle cx="63" cy="52" r="2.5" fill="${color}"/>
-                    <line x1="24" y1="38" x2="52" y2="38" stroke="${color}" stroke-width="2.5" stroke-linecap="round"/>
-                </svg>`;
-            } else {
-                return `
-                <svg class="w-24 h-24 mx-auto drop-shadow-sm" viewBox="0 0 100 100" fill="none">
-                    <path d="M32 36C32 22 40 14 50 14C60 14 68 22 68 36" stroke="#C59B27" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="3 3"/>
-                    <rect x="22" y="36" width="56" height="46" rx="10" fill="${color}" fill-opacity="0.18" stroke="#3E2723" stroke-width="3.5"/>
-                    <path d="M22 46C22 46 36 58 50 58C64 58 78 46 78 46" stroke="#3E2723" stroke-width="3.5"/>
-                    <rect x="45" y="53" width="10" height="10" rx="2" fill="#C59B27" stroke="#3E2723" stroke-width="2"/>
-                </svg>`;
-            }
-        }
-
-        // دالة عرض المنتجات داخل الشبكة
-        function renderProducts(filter = 'all') {
-            const grid = document.getElementById('products-grid');
-            const filtered = filter === 'all' ? products : products.filter(p => p.category === filter);
-
-            grid.innerHTML = filtered.map(product => {
-                // تجهيز رسالة واتساب تلقائية تحتوي على اسم الموديل والكود
-                const whatsappMessage = encodeURIComponent(
-                    `السلام عليكم الأمير باجز، أرغب في الاستفسار وطلب الموديل التالي:\n` +
-                    `• اسم الموديل: ${product.title}\n` +
-                    `• الكود: ${product.id}\n` +
-                    `• الخامة: ${product.material}`
-                );
-                const whatsappUrl = `https://wa.me/201551468045?text=${whatsappMessage}`;
-
-                return `
-                <article class="product-card bg-white rounded-2xl border border-brand-sand overflow-hidden flex flex-col justify-between shadow-sm">
-                    <div>
-                        <!-- منطقة عرض المنتج (يمكن استبدالها مستقبلاً بصورة المنتج المضغوطة WebP) -->
-                        <div class="relative bg-gradient-to-br from-brand-sand/60 to-brand-cream p-6 border-b border-brand-sand/60">
-                            <span class="absolute top-3 right-3 bg-brand-brown text-brand-gold text-[11px] font-extrabold px-2.5 py-1 rounded-lg">
-                                كود: ${product.id}
-                            </span>
-                            <span class="absolute top-3 left-3 bg-white/90 text-brand-brown border border-brand-sand text-[11px] font-bold px-2.5 py-1 rounded-lg">
-                                ${product.badge}
-                            </span>
-                            <div class="py-3">
-                                ${getProductIllustration(product.svgType, product.accentColor)}
-                            </div>
-                        </div>
-
-                        <!-- تفاصيل المنتج -->
-                        <div class="p-5">
-                            <span class="text-xs font-bold text-brand-gold block mb-1">${product.categoryName}</span>
-                            <h3 class="text-base font-extrabold text-brand-brown leading-snug mb-3">${product.title}</h3>
-                            
-                            <div class="space-y-1.5 text-xs text-brand-leather border-t border-brand-sand/70 pt-3">
-                                <div class="flex justify-between">
-                                    <span class="font-semibold text-brand-brown/70">الخامة:</span>
-                                    <span class="font-bold text-brand-brown">${product.material}</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span class="font-semibold text-brand-brown/70">المقاس:</span>
-                                    <span class="font-bold text-brand-brown">${product.dimensions}</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span class="font-semibold text-brand-brown/70">الألوان:</span>
-                                    <span class="font-bold text-brand-brown">${product.colors}</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- السعر وزر الطلب عبر واتساب -->
-                    <div class="px-5 pb-5 pt-1">
-                        <div class="bg-brand-cream rounded-lg py-1.5 px-3 text-center mb-3 border border-brand-sand">
-                            <span class="text-xs font-extrabold text-brand-brown">🏷️ سعر المصنع المباشر (جملة وقطاعي)</span>
-                        </div>
-                        <a href="${whatsappUrl}" 
-                           target="_blank" 
-                           rel="noopener noreferrer"
-                           class="w-full inline-flex items-center justify-center gap-2 bg-brand-whatsapp hover:bg-brand-whatsappHover text-white font-bold text-sm py-3 px-4 rounded-xl shadow-sm transition-all active:scale-95">
-                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
-                            </svg>
-                            <span>اطلب عبر واتساب</span>
-                        </a>
-                    </div>
-                </article>
-                `;
-            }).join('');
-        }
-
-        // دالة التبديل بين أقسام الكتالوج
-        function filterProducts(category) {
-            renderProducts(category);
-            
-            // تحديث شكل الأزرار النشطة
-            const buttons = document.querySelectorAll('.filter-btn');
-            buttons.forEach(btn => {
-                if (btn.getAttribute('data-filter') === category) {
-                    btn.classList.remove('bg-white', 'text-brand-brown', 'border', 'border-brand-sand');
-                    btn.classList.add('bg-brand-brown', 'text-white', 'shadow-sm');
-                } else {
-                    btn.classList.remove('bg-brand-brown', 'text-white', 'shadow-sm');
-                    btn.classList.add('bg-white', 'text-brand-brown', 'border', 'border-brand-sand');
-                }
-            });
-        }
-
-        // تشغيل العرض الفوري عند تحميل الصفحة
-        document.addEventListener('DOMContentLoaded', () => {
-            renderProducts('all');
-        });
-    </script>
 </body>
 </html>
-```
